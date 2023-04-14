@@ -1,3 +1,13 @@
+:root{
+    --color-rgba-white-1: rgba(255, 255, 255, 0.5);
+    --color-rgba-white-2: rgba(255, 255, 255, 0.8);
+    --color-rgba-black: rgba(0, 0, 0, 0.8);
+    --color-rgb-grey: rgb(31, 31, 31);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +15,7 @@
 }
 
 body{
-    background: rgba(0, 0, 0, 0.9) url(../imagens/fundo-3.jpg) no-repeat center fixed;
+    background: url(../imagens/fundo-3.jpg) no-repeat center fixed;
     background-size: cover;
     height: 100%;
 }
@@ -15,12 +25,12 @@ main{
 }
 
 h1{
-    color: rgba(255, 255, 255, 0.5);;
+    color: var(--color-rgba-white-1);
     font-size: 1em;
     text-align: center;
 }
 h2{
-    color: white;
+    color: var(--color-white);
     font-size: 2.3em;
 }
 
@@ -28,9 +38,10 @@ p{
     width: 215px;
     height: 45px;
     margin: 5px;
+    padding: 5px;
     font-size: 25px;
-    background: rgba(255, 255, 255, 0.8);
-    color: black;
+    background: var(--color-rgba-white-2);
+    color: var(--color-black);
     text-align: right;
     border-radius: 5px;
 }
@@ -39,7 +50,7 @@ p{
     
     height: auto;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--color-rgba-black);
     border-radius: 15px;
     position: absolute;
     top: 50%;
@@ -48,8 +59,8 @@ p{
 }
 
 button{
-    background: rgb(31, 31, 31);
-    color: white;
+    background: var(--color-rgb-grey);
+    color: var(--color-white);
     border: none;
     width: 50px;
     height: 50px;
@@ -60,7 +71,7 @@ button{
 }
 
 button:hover{
-    background: black;
+    background: var(--color-black);
 }
 
 .botao-maior{
